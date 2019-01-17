@@ -12,7 +12,6 @@ let title = document.querySelector('.title');
 let copy = document.querySelector('.copy');
 let icon = document.querySelector('.copy i');
 let contain = document.querySelector(".contain");
-let white = document.querySelector('.white');
 let middle = document.querySelector('.middle');
 let loading = document.querySelector('.screen-loading');
 let cubos = document.querySelectorAll('.cubo');
@@ -82,14 +81,8 @@ input1.focus();
 
 // função de clique para descer enter color e subir color random
 menu.onclick = () => {
-    middle.classList.toggle('invisible');
-    title.classList.toggle('invisible');
-    butao.classList.toggle('invisible');
-    butao1.classList.toggle('invisible');
-    butao2.classList.toggle('invisible');
     menu.classList.toggle('fa-cog-click');
     contain.classList.toggle('contain-toggle');
-    white.classList.toggle('white-toggle');
     
 }
 

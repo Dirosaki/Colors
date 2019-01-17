@@ -25,7 +25,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 1000;
+    z-index: 1000!important;
     transition: .5s;
 }
 
@@ -142,21 +142,21 @@ body{
     color: white;
     position: absolute;
     right: 2%;
-    top: 5%;
+    top: 3%;
     font-size: 38px;
     cursor: pointer;
-    transition: .5s;
+    transition: 1.5s;
 }
 
 
 .fa-cog-click{
-    transform: rotate(360deg);
+    transform: rotate(660deg);
 }
 
 
 .contain{
     width: 50%;
-    height: 40%;
+    height: 45%;
     background-color: white;
     display: flex;
     align-items: center;
@@ -189,10 +189,7 @@ body{
 }
 
 .contain-toggle{
-    /* transform: translateY(100%); */
-    border-radius: 100%;
-    width: 100px;
-    height: 100px;
+    transform: translateX(200%);
 }
 
 .title{
@@ -218,7 +215,6 @@ body{
 .middle{
     width: 90%;
     height: 54px;
-    /* margin-top: 10px; */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -416,10 +412,62 @@ body{
     .bloco-color{
         width: 65%;
     }
-    .input-one{
+    .middle .input-one{
         width: 35%;
     }
 }
+@media screen and (max-width: 500px){
+    .title{
+        height: 20%;
+    }
+    
+    .contain{
+        height: 60%;
+    }
+
+    .contain .button{
+        height: 15%;
+    }
+
+    .copy{
+        top: -28px;
+    }
+    
+    .bloco-color{
+        width: 100%;
+        border-radius: 5px;
+        top: -28px;
+    }
+
+    .middle .input-one{
+        width: 100%;
+        border-radius: 5px;
+        bottom: -38px;
+    }
+}
+
+@media screen and (max-width: 430px){
+    .contain .button{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 350px){
+    .bloco-color input{
+        font-size: 14px;
+        padding-left: 25px;
+    }
+    .title{
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-height: 550px){
+    .contain{
+        height: 70%;
+    }
+}
+
 
 
 
