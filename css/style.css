@@ -9,12 +9,8 @@ body{
     width: 100vw;
     background-color: black;
     text-shadow: 0 0 5px black!important;
+    position: relative;
     overflow: hidden!important;
-}
-
-.invisible{
-    visibility: hidden;
-    transition: .01s;
 }
 
 .screen-loading{
@@ -382,6 +378,7 @@ body{
     top: 0;
     left: -200%;
     transition: ease-in-out 1s;
+    overflow: hidden;
 }
 
 .body-two-toggle{

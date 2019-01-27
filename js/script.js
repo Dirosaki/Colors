@@ -103,7 +103,16 @@ menu.onclick = () => {
     
 }
 
-
+function verifyHashtag() {
+    console.log(input1.value.charAt(0))
+    if (input1.value.charAt(0).includes('#')) {
+       return true;
+    } else {
+      this.value = "#"
+    }
+} 
+  
+input1.addEventListener('keypress', verifyHashtag);
 
 // função que verifica o campo do input, se os requisitos forem aprovados ele aplica a cor digitada
 function apply () {
