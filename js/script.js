@@ -111,8 +111,19 @@ function verifyHashtag() {
       this.value = "#"
     }
 } 
+
+// Mascara de Campo Hexadecimal
+function hexMask(value) {
+    return value
+        .replace(/[^A-F0-9]/gi, '')
+        .replace(/([A-F0-9])/i, '#$1')
+        .replace(/([A-F0-9]{5})/i, '$1')
+        .replace(/(#[A-F0-9]{6}).+?/i, '$1')
+}
   
-input1.addEventListener('keypress', verifyHashtag);
+input1.addEventListener('input', (e) => {
+    e.target.value = hexMask(e.target.value)
+});
 
 // função que verifica o campo do input, se os requisitos forem aprovados ele aplica a cor digitada
 function apply () {
